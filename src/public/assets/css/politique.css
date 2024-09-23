@@ -1,0 +1,48 @@
+
+  
+#politique{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.hero {
+
+    background-color: #eee;
+    
+}
+
+.hero h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 20px;
+
+    
+}
+
+.policy {
+    padding: 20px 0;
+}
+
+.policy h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.policy p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.policy ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.policy li {
+    font-size: 16px;
+    line-height: 1.5;
+}
+

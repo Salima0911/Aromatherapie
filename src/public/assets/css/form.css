@@ -1,0 +1,153 @@
+/* css fomulaire de connection  */
+
+main {
+	position: relative;
+}
+
+main .wrapper {
+	font-family: "Kodchasan", sans-serif;
+}
+.wrapper h1 {
+	text-align: center;
+	/* margin-bottom: 30px; */
+	font-family: "Kodchasan", sans-serif;
+}
+
+form input::placeholder {
+	font-family: "Kodchasan", sans-serif;
+}
+
+#register img {
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+	/* object-fit: cover; */
+	object-fit: cover;
+	object-position: 80% 80%;
+	height: 600px;
+}
+
+main a {
+	text-decoration: none;
+	color: #0b8a30;
+}
+
+.wrapper {
+	background-color: #f4f6f7;
+	width: 780px;
+	position: absolute;
+	top: 0;
+	transform: translate(-50% -50%);
+	top: 20%;
+	left: 30%;
+	padding: 35px 55px;
+	border-radius: 15px;
+}
+
+form input,
+button {
+	display: block;
+	margin: 0 auto;
+	width: 418px;
+	border-radius: 8px;
+	padding: 10px;
+}
+
+.form-control {
+	display: flex;
+	column-gap: 10px;
+}
+.form-control input {
+	flex: 1;
+}
+
+form button {
+	cursor: pointer;
+}
+
+form a {
+	/* display: block; */
+	margin: 0 auto;
+}
+
+.link {
+	/* width: 300px; */
+	margin: 20px auto;
+	text-align: center;
+	line-height: 5px;
+}
+
+form input {
+	margin-bottom: 10px;
+}
+
+form button {
+	background-color: #13d44b;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/* CHECKBOOX */
+
+.container-checkbox {
+	display: block;
+	position: relative;
+	width: 150px;
+	left: 19%;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input[type="checkbox"] {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+	top: 0;
+	right: -30px;
+}
+
+.check {
+	position: absolute;
+	top: 0;
+	right: -35px;
+	height: 25px;
+	width: 25px;
+	background-color: hsl(0, 0%, 100%);
+	font-family: "FontAwesome";
+	/* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+	border: 1px solid #ccc;
+}
+
+.container-checkbox:hover input ~ .check {
+	background-color: #b5fdc8;
+}
+
+.container-checkbox input:checked ~ .check {
+	background-color: #69c582;
+}
+
+.check:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.container-checkbox input:checked ~ .check:after {
+	/* display: block; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	width: 100%;
+	height: 100%;
+}
+
+.container-checkbox .check:after {
+	content: "\f00c";
+}
